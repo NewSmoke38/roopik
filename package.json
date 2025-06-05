@@ -1,0 +1,15 @@
+{
+  "name": "roopik",
+  "version": "1.0.0",
+  "description": "a dynamic card generator ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "backend"
+  ],
+  "author": "Shivani Sharma",
+  "license": "ISC"
+}
