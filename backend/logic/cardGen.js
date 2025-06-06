@@ -37,6 +37,53 @@ const earlyLifeSnippets = [
   "Loved visiting the city library. Got lost between shelves. Always found with a new adventure in hand. Borrowed more than allowed every time. Created a secret genre index. Knew which shelf smelled best."
 ];
 
+const careerSnippets = [
+  "Rose to fame by debugging an ancient alien OS found in a floppy disk. Later trained a toaster to sort files using AI-powered crumbs.",
+  "Pioneered the art of silent coding in bustling coffee shops. Secretly composed symphonies inspired by error logs.",
+  "Invented a programming language based on bird songs. Hosted annual hackathons in treehouses across the globe.",
+  "Developed a neural network that predicts the next big meme. Once replaced a server with a swarm of trained ants.",
+  "Authored a bestselling book on quantum computing for pets. Designed wearable tech that translates cat meows into code.",
+  "Built a robot that paints abstract art from user emotions. Held exhibitions where the paintings changed with the audience's mood.",
+  "Conceived a virtual reality game set inside a black hole. Players report feeling the pull of gravity even after logging out.",
+  "Created an app that turns dreams into digital sketches. Collaborated with sleep scientists to map the subconscious mind.",
+  "Led a team that automated the art of making perfect coffee. Developed a machine learning model that predicts caffeine cravings.",
+  "Designed a blockchain system for trading invisible assets. Hosted secret auctions for phantom cryptocurrencies.",
+  "Engineered a drone that plants trees while reciting poetry. Organized environmental cleanups synchronized with musical beats.",
+  "Built a chatbot that writes personalized lullabies. Used AI to help insomniacs find their perfect bedtime story.",
+  "Invented a smartwatch that detects and celebrates micro-moments of joy. Partnered with psychologists to enhance daily happiness.",
+  "Created a digital garden where code grows like plants. Users nurture their projects by watering and pruning virtual leaves.",
+  "Developed an AI that composes haikus based on weather patterns. Held live performances where nature and technology blend.",
+  "Designed a system that translates sign language into musical notes. Advocated for accessible art through technology.",
+  "Built a virtual museum showcasing forgotten internet memes. Curated exhibits that explore digital nostalgia.",
+  "Created an algorithm that predicts plot twists in novels. Collaborated with authors to craft more surprising stories.",
+  "Engineered a wearable that changes color based on the user's mood. Featured in fashion shows blending tech and emotion.",
+  "Developed a platform where users can time-travel through historical tweets. Sparked debates on digital memory and history."
+];
+
+const xpSnippets = [
+  "10,000 hours in keyboard combat over caffeine-fueled nights.",
+  "A decade of pushing pixels and limits since dial-up days.",
+  "Three eras of late-night commits and existential scrolls.",
+  "Debugged across five time zones in just one quarter.",
+  "Graduated from the School of Hard Reboots in four releases.",
+  "Seven years seasoned by sprints and Sunday deploys.",
+  "A timeline of wisdom traced through infinite loops.",
+  "Five frameworks rose and fell in just two internships.",
+  "Survived 12 production outages since last summer.",
+  "Fifteen months of crafting code with callused fingertips.",
+  "Logged bugs every week for five straight sprints.",
+  "Refactored legacy into legends every quarter.",
+  "365 stand-ups later, still hitting merge on time.",
+  "Marathon-coded for 72-hour hackathons, five times.",
+  "Mentored devs and rubber ducks for over two fiscal years.",
+  "Holiday-hacked for three winters in a row.",
+  "Eighteen months without missing a semicolon.",
+  "Wrote clean code on the first try — once in 2019.",
+  "Broke prod six times before lunch and still delivered.",
+  "Once coded blindfolded on a five-minute challenge — won."
+];
+
+
 function generateCard(fullname, username, roles) {
   const selectedRoles = roles.map(role => rolesData[role] || { summary: "Mysterious persona." });     
 // maps over each role sent by the user.
@@ -83,6 +130,7 @@ const summary = selectedRoles
   ]);
 
   const earlyLife = randomFromArray(earlyLifeSnippets);
+  const career = randomFromArray(careerSnippets);
 
   return {
     fullname,
@@ -91,8 +139,8 @@ const summary = selectedRoles
     maritalStatus,
     summary,
     earlyLife,
-    career: `Known for excellence in ${roles.join(', ')}. Rumored to have worked with secret guilds.`,
-    xp: `${Math.floor(Math.random() * 10 + 1)} years of mythical experience.`,
+    career: career,
+    xp: randomFromArray(xpSnippets),
   };
 }
 
