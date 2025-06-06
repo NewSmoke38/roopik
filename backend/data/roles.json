@@ -1,0 +1,354 @@
+{
+  "Terminal Gremlin": {
+    "summary": [
+      "Lives in split panes and nested tmux sessions.",
+      "Mutates dotfiles until they transcend dimensions.",
+      "Echoes ASCII art through forgotten shells.",
+      "Speaks only in `grep`, `awk`, and arcane curses.",
+      "Worships the blinking cursor as a deity."
+    ]
+  },
+  "Sticker Wizard": {
+    "summary": [
+      "Blesses laptops with relics of rebellion and joy.",
+      "Tracks the rarest sticker drops across clubs.",
+      "Collects pixels that stick and stories that stay.",
+      "Every sticker placed is a rune of power.",
+      "Designs holographic seals of mutual respect."
+    ]
+  },
+  "Club DJ": {
+    "summary": [
+      "Spins lofi beats and hype breaks for hacker vibes.",
+      "Tunes the room's mood with each chord drop.",
+      "Maintains the sonic soul of shipping sessions.",
+      "Elevates bugs into beats.",
+      "Connects aux cables like magic cables of energy."
+    ]
+  },
+  "HTML Priest": {
+    "summary": [
+      "Writes sacred tags to summon structure from void.",
+      "Preaches semantic purity and markup balance.",
+      "Knows every tag from `<a>` to `<z>` (almost).",
+      "Renders order with div-ine intervention.",
+      "Keeps styles separate and spirits aligned."
+    ]
+  },
+  "CSS Witch": {
+    "summary": [
+      "Brews layouts in flex cauldrons and grid circles.",
+      "Summons animations that haunt the user (gently).",
+      "Solves browser curses with ancient incantations.",
+      "Layers shadows like spells of subtle power.",
+      "Writes selectors like hexes of elegance."
+    ]
+  },
+  "Open Source Druid": {
+    "summary": [
+      "Whispers to repos in the sacred forest of GitHub.",
+      "Spreads wisdom through pull requests and READMEs.",
+      "Nurtures contributors like seedlings of change.",
+      "Commits kindness into collaborative codebases.",
+      "Follows the sacred license of freedom and forks."
+    ]
+  },
+  "Ship Captain": {
+    "summary": [
+      "Navigates shipping logs and CI seas with grace.",
+      "Charts course from idea to deploy in record time.",
+      "Keeps the crew aligned through version storms.",
+      "Celebrates every launch like a ritual voyage.",
+      "Maintains course even when prod is on fire."
+    ]
+  },
+  "Localhost Ranger": {
+    "summary": [
+      "Patrols local ports and tunnels with quiet skill.",
+      "Guards against CORS beasts and 500 dragons.",
+      "Knows the terrain of localhost better than home.",
+      "Resolves DNS disputes with peaceful config edits.",
+      "Always knows which process is using that port."
+    ]
+  },
+  "Pixel Nomad": {
+    "summary": [
+      "Drifts through design systems like a breeze of light.",
+      "Harvests hues from dawn to dusk.",
+      "Travels across margin lands and padding plains.",
+      "Sketches dreams into Figma, ships them in code.",
+      "Speaks fluent `rem` and `em` dialects."
+    ]
+  },
+  "Keyboard Monk": {
+    "summary": [
+      "Meditates between keystrokes for divine code clarity.",
+      "Crafts thoughtful commits with intentional energy.",
+      "Believes in clean code, clean mind.",
+      "Worships mechanical switches and minimal keymaps.",
+      "Writes only what needs to be written."
+    ]
+  },
+  "Bug Whisperer": {
+    "summary": [
+      "Tames wild bugs with compassion and breakpoints.",
+      "Translates error messages into understandable truths.",
+      "Believes every bug holds a lesson.",
+      "Steps through logic like a ghost through walls.",
+      "Logs with purpose, not panic."
+    ]
+  },
+  "PR Bard": {
+    "summary": [
+      "Sings praises of well-documented pull requests.",
+      "Narrates code changes with poetic clarity.",
+      "Believes every commit is a story.",
+      "Crafts changelogs as campfire tales.",
+      "Rebases with rhythm and merges with melody."
+    ]
+  },
+  "Sudo Strategist": {
+    "summary": [
+      "Grants access to root wisdom sparingly.",
+      "Plans infrastructure like a tactician of uptime.",
+      "Knows when to `sudo` and when to `nope`.",
+      "Designs systems that defend against chaos.",
+      "Writes documentation like war plans."
+    ]
+  },
+  "Infinite Looper": {
+    "summary": [
+      "Repeats tasks with joy and curiosity.",
+      "Debugs endless loops with infinite patience.",
+      "Seeks beauty in recursion and repetition.",
+      "Finds meaning in every iteration.",
+      "Wanders but never halts."
+    ]
+  },
+  "Cosmic Cutie": {
+    "summary": [
+      "Sparks joy and stars with every commit.",
+      "Wraps code in stardust and pastel power.",
+      "Deploys magic with a wink and a bash script.",
+      "Floats between style sheets and shooting stars.",
+      "Glows in the dark terminal like a constellation."
+    ]
+  },
+  "Softcore Hacker": {
+    "summary": [
+      "Patches bugs with stickers and sunshine.",
+      "Hacks like a whisper and ships like a hug.",
+      "Dreams in markdown and bubble tea syntax.",
+      "Crushes errors gently, but firmly.",
+      "Prefers comfy keycaps and cozy PRs."
+    ]
+  },
+  "Terminal Sweetheart": {
+    "summary": [
+      "Types commands with heart-shaped precision.",
+      "Keeps dotfiles tidy and feelings validated.",
+      "Blends pink themes with serious scripts.",
+      "Codes like a poet in a hoodie.",
+      "Never rage quits, only rage reboots."
+    ]
+  }
+,
+  "Backend Sorcerer": {
+    "summary": [
+      "Weaves backend incantations with serverless spells.",
+      "Breathes life into RESTful APIs.",
+      "Crafts scalable architectures from shadows and sockets.",
+      "Communicates in JSON and cryptic logs.",
+      "Tames databases with whispered commands.",
+      "Casts firewalls and balances loads like a mage.",
+      "Knows the sacred scrolls of Express and FastAPI.",
+      "Keeps the stack humming with background rituals.",
+      "Fixes memory leaks in their sleep.",
+      "Encrypts everything—even their lunch notes."
+    ]
+  },
+  "Frontend Alchemist": {
+    "summary": [
+      "Turns UI chaos into composable serenity.",
+      "Forges components that glisten with user joy.",
+      "Animates pixels like spells from a glowing wand.",
+      "Lives by the law of accessibility and elegance.",
+      "Blends Tailwind and React with alchemical grace.",
+      "Designs interfaces that speak human.",
+      "Brings harmony between Figma and DOM.",
+      "Hides bugs behind drop shadows.",
+      "Captures emotion in every hover effect.",
+      "Ships perfection, one div at a time."
+    ]
+  },
+  "AI/ML Researcher": {
+    "summary": [
+      "Trains machines to think, almost feel.",
+      "Feeds neural nets with curated chaos.",
+      "Tames transformers with patience and coffee.",
+      "Teaches computers to caption cats and compose songs.",
+      "Loses sleep over model drift.",
+      "Finds elegance in gradients and loss curves."
+    ]
+  },
+  "Hardware Tinkerer": {
+    "summary": [
+      "Solders wires with dreams and precision.",
+      "Builds bots that wake with blinking LEDs.",
+      "Writes C into the silicon of reality.",
+      "Lives on the edge of voltage and vision.",
+      "Breathes magic into bare metal.",
+      "Debugs circuits by pure intuition."
+    ]
+  },
+  "PCB Designer": {
+    "summary": [
+      "Traces copper paths like electric calligraphy.",
+      "Knows the sacred geometry of vias and pads.",
+      "Lays out traces like a cartographer of current.",
+      "Optimizes components like a minimalist monk.",
+      "Prints art that powers machines.",
+      "Designs silence between signals."
+    ]
+  },
+  "React Developer": {
+    "summary": [
+      "Hooks into state like it's second nature.",
+      "Splits logic like components of thought.",
+      "Manages context like a data diplomat.",
+      "Debugs JSX dreams and hydration nightmares.",
+      "Hot reloads through the storm.",
+      "Believes in declarative zen."
+    ]
+  },
+  "DevOps Engineer": {
+    "summary": [
+      "Automates everything, trusts nothing.",
+      "Pipelines flow where they walk.",
+      "Deploys like a conductor of chaos.",
+      "Monitors with the eyes of a hawk.",
+      "Defines infrastructure in code and coffee.",
+      "Finds peace in logs and metrics."
+    ]
+  },
+  "Full Stack Developer": {
+    "summary": [
+      "Bridges the front and back like a digital diplomat.",
+      "Speaks fluent HTML and SQL.",
+      "Knows where the buttons come from—and where the data goes.",
+      "Ships features like freight trains.",
+      "Fixes everything, blames no one.",
+      "Walks the entire stack without breaking a sweat."
+    ]
+  },
+  "AI Engineer": {
+    "summary": [
+      "Applies deep learning like industrial glue.",
+      "Serves models with uncanny efficiency.",
+      "Knows PyTorch better than their own handwriting.",
+      "Deploys vision that sees beyond pixels.",
+      "Engineers intelligence at scale.",
+      "Builds smarter systems, not just smart ones."
+    ]
+  },
+  "Data Analyst": {
+    "summary": [
+      "Slices numbers until they confess meaning.",
+      "Lives in spreadsheets and SQL dreams.",
+      "Builds dashboards that speak in insights.",
+      "Knows every hidden pivot.",
+      "Finds signal in the noisiest haystack.",
+      "Tells stories from scattered tables."
+    ]
+  },
+  "AI and Data Scientist": {
+    "summary": [
+      "Predicts trends and shapes futures.",
+      "Combines theory, code, and caffeine.",
+      "Builds models that whisper what’s next.",
+      "Lives where math and intuition collide.",
+      "Explores data like a digital biologist.",
+      "Knows the poetry of probability."
+    ]
+  },
+  "Android Developer": {
+    "summary": [
+      "Builds apps that live in your pocket.",
+      "Knows Kotlin like a native tongue.",
+      "Designs UIs for fingers and futures.",
+      "Optimizes for battery and beauty.",
+      "Compiles APKs like spells.",
+      "Navigates Intents like a psychic."
+    ]
+  },
+  "iOS Developer": {
+    "summary": [
+      "Speaks Swift and taps into UIKit energy.",
+      "Lives under Xcode’s enigmatic skies.",
+      "Designs UIs with clarity and care.",
+      "Optimizes performance with surgical precision.",
+      "Surfs Apple’s changing APIs gracefully.",
+      "Delivers delight with every build."
+    ]
+  },
+  "Blockchain Developer": {
+    "summary": [
+      "Signs transactions with mystical hashes.",
+      "Believes in decentralization like a creed.",
+      "Watches ledgers like holy books.",
+      "Writes smart contracts that outsmart.",
+      "Secures consensus like a guardian of truth.",
+      "Thinks in chains, deploys in blocks."
+    ]
+  },
+  "Software Architect": {
+    "summary": [
+      "Designs systems like cathedrals of logic.",
+      "Chooses patterns with intention.",
+      "Draws blueprints in diagrams and dreams.",
+      "Bridges developers and destiny.",
+      "Knows when to scale and when to stay still.",
+      "Architects not just code—but teams."
+    ]
+  },
+  "Cyber Security Specialist": {
+    "summary": [
+      "Guards the gates of digital kingdoms.",
+      "Thinks like an attacker, builds like a defender.",
+      "Knows every exploit by its alias.",
+      "Encrypts everything, even chat jokes.",
+      "Secures systems and educates allies.",
+      "Monitors the matrix for signs of breach."
+    ]
+  },
+  "UX Designer": {
+    "summary": [
+      "Designs with empathy, tests with rigor.",
+      "Crafts flows that feel inevitable.",
+      "Interviews users like detectives of friction.",
+      "Draws wireframes with intentional whitespace.",
+      "Fights for clarity and consistency.",
+      "Bridges thought and interaction beautifully."
+    ]
+  },
+  "Game Developer": {
+    "summary": [
+      "Builds worlds from loops and pixels.",
+      "Programs joy into real-time adventures.",
+      "Knows frame rates and fun curves.",
+      "Creates systems that breathe challenge.",
+      "Lives at the edge of immersion.",
+      "Ships experiences, not just software."
+    ]
+  },
+  "Technical Writer": {
+    "summary": [
+      "Writes docs that read like spells.",
+      "Turns chaos into clarity.",
+      "Believes in the magic of good README.",
+      "Documents so others may build.",
+      "Bridges knowledge gaps with commas and code.",
+      "Ships prose with precision."
+    ]
+  }
+}
