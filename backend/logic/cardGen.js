@@ -85,7 +85,11 @@ const xpSnippets = [
 
 
 function generateCard(fullname, username, roles) {
-  const selectedRoles = roles.map(role => rolesData[role] || { summary: "Mysterious persona." });     
+  if (!Array.isArray(roles)) {
+    console.error('Roles must be an array');
+    roles = []; // Provide default empty array
+  }
+    const selectedRoles = roles.map(role => rolesData[role] || { summary: "Mysterious persona." });     
 // maps over each role sent by the user.
 //	for each role, it fetches the corresponding object from roles.json.
 //	if a role doesn’t exist in roles.json,it gives a default summary.

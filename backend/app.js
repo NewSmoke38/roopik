@@ -9,7 +9,7 @@ app.use(cors());
 
 app.use(express.json());
 
-app.post('/generate', (req, res) => {      // after selecting roles the user hits this point only for a magical generation!!
+app.post('/api/v1/generate', (req, res) => {      // after selecting roles the user hits this point only for a magical generation!!
   const { fullname, username, roles } = req.body;
   if (!fullname || !username || !roles || roles.length < 1) {
     return res.status(400).json({ error: 'Missing fields' });
