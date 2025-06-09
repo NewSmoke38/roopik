@@ -67,25 +67,25 @@ function HomePage() {
           <form className="space-y-4" onSubmit={handleSubmit}>
             <input
               type="text"
-              placeholder="Full Name"
-              className="w-full p-3 bg-white border-2 border-black rounded focus:outline-none focus:bg-gray-100 placeholder:text-gray-500"
               value={fullname}
               onChange={(e) => setFullname(e.target.value)}
+              placeholder="Full Name"
+              className="w-full p-2 border-2 border-black rounded text-black"
             />
             <input
               type="text"
-              placeholder="@username"
-              className="w-full p-3 bg-white border-2 border-black rounded focus:outline-none focus:bg-gray-100 placeholder:text-gray-500"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              placeholder="@username"
+              className="w-full p-2 border-2 border-black rounded text-black"
             />
             <div className="relative role-input-container">
               <input
                 type="text"
-                placeholder="Your Roles"
-                className="w-full p-3 bg-white border-2 border-black rounded focus:outline-none focus:bg-gray-100 placeholder:text-gray-500"
                 value={roleInput}
                 onChange={(e) => setRoleInput(e.target.value)}
+                placeholder="Your Roles"
+                className="w-full p-2 border-2 border-black rounded text-black"
                 onFocus={() => setShowDropdown(true)}
               />
               {showDropdown && (
@@ -93,7 +93,7 @@ function HomePage() {
                   {roles.map((role, idx) => (
                     <li
                       key={idx}
-                      className="px-3 py-1 rounded border-2 border-black bg-gray-200 hover:bg-gray-300 text-sm cursor-pointer transition"
+                      className="px-3 py-1 rounded-full border-2 border-black bg-[#ff6b6b] hover:bg-[#ff8e8e] text-black font-medium text-sm cursor-pointer transition"
                       onMouseDown={() => {
                         const newRoles = roleInput ? roleInput.split(',').map(r => r.trim()).filter(Boolean) : [];
                         if (!newRoles.includes(role)) {
@@ -110,7 +110,7 @@ function HomePage() {
             </div>
             <button
               type="submit"
-              className="w-full bg-[#ff6b6b] text-black border-2 border-black p-3 rounded hover:bg-[#ff8e8e] transition-all shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
+              className="w-full bg-[#ff6b6b] text-black font-bold border-2 border-black px-6 py-2 rounded hover:bg-[#ff8e8e] transition-all shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
             >
               Generate Card
             </button>

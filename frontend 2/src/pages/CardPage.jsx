@@ -63,7 +63,7 @@ function CardPage() {
           </div>
 
           <div className="text-center pt-6">
-            <Link to="/" className="bg-[#ff6b6b] text-black border-2 border-black px-6 py-2 rounded hover:bg-[#ff8e8e] transition-all shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+            <Link to="/" className="bg-[#ff6b6b] !text-black font-bold border-2 border-black px-6 py-2 rounded hover:bg-[#ff8e8e] transition-all shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
               [ OK ]
             </Link>
           </div>
