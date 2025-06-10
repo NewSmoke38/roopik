@@ -32,14 +32,18 @@ function CardPage() {
             <p className="text-xl text-gray-700">@{cardData.username}</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center pb-4 border-b-2 border-dashed border-black">
-            <div>
+          <div className="flex flex-row gap-4 text-center pb-4 border-b-2 border-dashed border-black">
+            <div className="flex-1 bg-[#fdf5e6] border-2 border-black rounded-lg p-4 shadow-[4px_4px_0px_rgba(0,0,0,1)]">
               <p className="font-bold text-black text-lg">Born</p>
               <p className="text-gray-800">{cardData.Born}</p>
             </div>
-            <div>
+            <div className="flex-1 bg-[#fdf5e6] border-2 border-black rounded-lg p-4 shadow-[4px_4px_0px_rgba(0,0,0,1)]">
               <p className="font-bold text-black text-lg">Marital Status</p>
               <p className="text-gray-800">{cardData.maritalStatus}</p>
+            </div>
+            <div className="flex-1 bg-[#fdf5e6] border-2 border-black rounded-lg p-4 shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+              <p className="font-bold text-black text-lg">Universe</p>
+              <p className="text-gray-800">#{Math.floor(Math.random() * 5901) + 100}</p>
             </div>
           </div>
 
