@@ -7,6 +7,7 @@ function HomePage() {
   const [roleInput, setRoleInput] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [selectedRoles, setSelectedRoles] = useState([]);
   const navigate = useNavigate();
 
   const roles = [
@@ -34,7 +35,7 @@ function HomePage() {
     e.preventDefault();
     
     // Validate inputs
-    if (!fullname.trim() || !username.trim() || !roleInput.trim()) {
+    if (!fullname.trim() || !username.trim() || selectedRoles.length === 0) {
       alert('Please fill in all fields');
       return;
     }
@@ -71,7 +72,7 @@ function HomePage() {
       const cardData = {
         fullname: fullname.trim(),
         username: username.trim(),
-        roles: roleInput.split(',').map(role => role.trim()),
+        roles: selectedRoles,
         Born: `${Math.floor(Math.random() * 28 + 1)}-${Math.floor(Math.random() * 12 + 1)}-${Math.floor(Math.random() * 30 + 1970)}`,
         maritalStatus: ['Single', 'Married', 'Divorced', 'It\'s Complicated', 'Taken by a Bug', 'Married to the Terminal'][Math.floor(Math.random() * 6)],
         summary: "A mysterious developer exploring the digital realms.",
@@ -173,31 +174,50 @@ function HomePage() {
               className="w-full p-2 border-2 border-black rounded text-black"
             />
             <div className="relative role-input-container">
-              <input
-                type="text"
-                value={roleInput}
-                onChange={(e) => setRoleInput(e.target.value)}
-                placeholder="Your Roles"
-                className="w-full p-2 border-2 border-black rounded text-black"
-                onFocus={() => setShowDropdown(true)}
-              />
-              {showDropdown && (
-                <ul className="absolute z-10 w-full bg-white border-2 border-black rounded mt-2 p-2 flex flex-wrap gap-2 max-h-48 overflow-y-auto">
-                  {roles.map((role, idx) => (
-                    <li
-                      key={idx}
-                      className="px-3 py-1 rounded-full border-2 border-black bg-[#ff6b6b] hover:bg-[#ff8e8e] text-black font-medium text-sm cursor-pointer transition"
-                      onMouseDown={() => {
-                        const newRoles = roleInput ? roleInput.split(',').map(r => r.trim()).filter(Boolean) : [];
-                        if (!newRoles.includes(role)) {
-                          newRoles.push(role);
-                          setRoleInput(newRoles.join(', '));
-                        }
+              <div className="w-full min-h-[42px] p-2 border-2 border-black rounded text-black flex flex-wrap items-center gap-2">
+                {selectedRoles.map((role, idx) => (
+                  <span
+                    key={idx}
+                    className="px-3 py-1 rounded-full bg-[#ff6b6b] text-black font-medium text-sm flex items-center gap-1"
+                  >
+                    {role}
+                    <span
+                      className="cursor-pointer hover:text-red-700 text-sm font-normal"
+                      onClick={() => {
+                        setSelectedRoles(selectedRoles.filter((_, i) => i !== idx));
+                        setRoleInput(selectedRoles.filter((_, i) => i !== idx).join(', '));
                       }}
                     >
-                      {role}
-                    </li>
-                  ))}
+                      ×
+                    </span>
+                  </span>
+                ))}
+                <input
+                  type="text"
+                  value={roleInput}
+                  onChange={(e) => setRoleInput(e.target.value)}
+                  placeholder={selectedRoles.length === 0 ? "Your Roles" : ""}
+                  className="flex-1 min-w-[120px] border-none focus:outline-none bg-transparent"
+                  onFocus={() => setShowDropdown(true)}
+                />
+              </div>
+              {showDropdown && (
+                <ul className="absolute z-10 w-full bg-white border-2 border-black rounded mt-2 p-2 flex flex-wrap gap-2 max-h-48 overflow-y-auto">
+                  {roles
+                    .filter(role => !selectedRoles.includes(role))
+                    .map((role, idx) => (
+                      <li
+                        key={idx}
+                        className="px-3 py-1 rounded-full border-2 border-black bg-[#ff6b6b] hover:bg-[#ff8e8e] text-black font-medium text-sm cursor-pointer transition"
+                        onMouseDown={() => {
+                          const newRoles = [...selectedRoles, role];
+                          setSelectedRoles(newRoles);
+                          setRoleInput('');  // Clear the input field
+                        }}
+                      >
+                        {role}
+                      </li>
+                    ))}
                 </ul>
               )}
             </div>
