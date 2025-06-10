@@ -57,6 +57,7 @@ export default function Home() {
       roles: roleInput.split(",").map((r) => r.trim()),
     };
 
+    // d
     try {
       const res = await fetch("http://localhost:3000/api/v1/generate", {
         method: "POST",
