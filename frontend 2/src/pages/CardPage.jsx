@@ -98,14 +98,14 @@ function CardPage() {
             {/* cat mouth */}
             <div className="absolute top-5 left-1/2 transform -translate-x-1/2 w-2 h-1 border-b-2 border-black rounded-b-full group-hover:w-3 group-hover:h-2 transition-all duration-300"></div>
             {/* cat whiskers */}
-            <div className="absolute top-4 -left-4 w-4 h-0.5 bg-black transform rotate-12 group-hover:rotate-45 transition-transform duration-300"></div>
-            <div className="absolute top-4 -left-4 w-4 h-0.5 bg-black transform -rotate-12 group-hover:-rotate-45 transition-transform duration-300"></div>
-            <div className="absolute top-4 -right-4 w-4 h-0.5 bg-black transform -rotate-12 group-hover:-rotate-45 transition-transform duration-300"></div>
-            <div className="absolute top-4 -right-4 w-4 h-0.5 bg-black transform rotate-12 group-hover:rotate-45 transition-transform duration-300"></div>
+            <div className="absolute top-4 -left-4 w-4 h-0.5 bg-black transform rotate-12 group-hover:rotate-12 transition-transform duration-300"></div>
+            <div className="absolute top-4 -left-4 w-4 h-0.5 bg-black transform -rotate-12 group-hover:-rotate-12 transition-transform duration-300"></div>
+            <div className="absolute top-4 -right-4 w-4 h-0.5 bg-black transform -rotate-12 group-hover:-rotate-12 transition-transform duration-300"></div>
+            <div className="absolute top-4 -right-4 w-4 h-0.5 bg-black transform rotate-12 group-hover:rotate-12 transition-transform duration-300"></div>
             {/* cat tail */}
-            <div className="absolute -right-6 top-1/2 w-8 h-3 bg-[#ff6b6b] border-2 border-black rounded-full transform rotate-45 animate-pulse group-hover:rotate-90 group-hover:animate-none transition-all duration-300">
+            {/* <div className="absolute -right-6 top-1/2 w-8 h-3 bg-[#ff6b6b] border-2 border-black rounded-full transform rotate-45 animate-pulse group-hover:rotate-90 group-hover:animate-none transition-all duration-300">
               <div className="absolute -right-1 top-1/2 w-2 h-2 bg-[#ff8e8e] rounded-full"></div>
-            </div>
+            </div> */}
             {/* cat paws */}
             <div className="absolute -bottom-1 left-2 w-3 h-2 bg-[#ff8e8e] border-2 border-black rounded-full group-hover:scale-110 transition-transform duration-300"></div>
             <div className="absolute -bottom-1 right-2 w-3 h-2 bg-[#ff8e8e] border-2 border-black rounded-full group-hover:scale-110 transition-transform duration-300"></div>
