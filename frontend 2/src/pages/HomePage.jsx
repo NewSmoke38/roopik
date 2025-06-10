@@ -40,7 +40,7 @@ function HomePage() {
     }
 
     try {
-      // Early life summaries
+      //early life summaries
       const earlyLifeSummaries = [
         "Started coding at age 8, building simple games in Scratch.\nDiscovered the magic of algorithms in high school math class.\nCreated first website at 15, never looked back.\nFound passion in open source contributions.\nBuilt a gaming community that reached 10,000 members.\nWon regional coding competitions three years in a row.\nStarted a tech blog that went viral in the developer community.\nMentored younger students in programming basics.",
         "Born with a keyboard in hand, first computer at age 5.\nBuilt first computer from spare parts at age 12.\nMastered BASIC before learning to ride a bike.\nStarted a tech blog that went viral.\nCreated a home automation system for the entire house.\nDeveloped a popular Minecraft mod with 100,000+ downloads.\nFounded a coding club that spread to 5 schools.\nBuilt a robot that won the state science fair.",
@@ -49,7 +49,7 @@ function HomePage() {
         "Started with Scratch programming at age 7.\nBuilt a home automation system at 13.\nCreated a popular Minecraft mod with 500,000 downloads.\nFounded a coding club in school.\nDeveloped a mobile game that went viral.\nBuilt a social platform for developers.\nCreated an AI project that won science fair.\nStarted a tech startup in high school."
       ];
 
-      // Career summaries
+      // career summaries
       const careerSummaries = [
         "Led development of award-winning apps used by millions.\nPioneered new frameworks in the industry.\nBuilt scalable systems for Fortune 500 companies.\nMentored 100+ junior developers to success.\nArchitected cloud infrastructure for startups.\nCreated open source tools used by developers worldwide.\nSpearheaded digital transformation projects.\nOptimized systems for maximum performance.",
         "Built scalable systems for Fortune 500 companies.\nMentored 100+ junior developers to success.\nCreated open source tools used by millions.\nSpearheaded digital transformation projects.\nDeveloped AI solutions for healthcare.\nArchitected cloud infrastructure for startups.\nBuilt gaming engines from scratch.\nOptimized systems for performance.",
@@ -80,7 +80,7 @@ function HomePage() {
         xp: xpSummaries[Math.floor(Math.random() * xpSummaries.length)]
       };
 
-      // Navigate to card page with the data
+      // navigating to card page with the data
       navigate('/card', { state: { cardData } });
     } catch (error) {
       console.error('Error generating card:', error);
@@ -88,6 +88,8 @@ function HomePage() {
     }
   };
 
+
+  // bg hover effect
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -149,7 +151,7 @@ function HomePage() {
             Different <span className="relative group">
               <span className="cursor-help border-b border-dotted border-[#e64545]">roops</span>
               <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1.5 bg-[#ff6b6b] text-black text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-                roop means form/appearance in Sanskrit
+                roop means  form/appearance  in Sanskrit
                 <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 rotate-45 w-2 h-2 bg-[#ff6b6b] border-r-2 border-b-2 border-black"></span>
               </span>
             </span> of people in the Parallel Universe

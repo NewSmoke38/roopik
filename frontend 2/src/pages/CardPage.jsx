@@ -1,10 +1,10 @@
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';      /// the location from where the generate stuff would come
 
 function CardPage() {
   const location = useLocation();
   const { cardData } = location.state || {};
 
-  if (!cardData) {
+  if (!cardData) {        /// if in case we dont get the location or data then send this error msg
     return (
       <div className="h-screen w-screen bg-white text-black flex flex-col items-center justify-center px-4">
         <p>No card data available. Please generate a card first.</p>
@@ -16,7 +16,7 @@ function CardPage() {
   return (
     <div className="min-h-screen w-full p-4 sm:p-8 flex items-center justify-center relative">
       <div className="w-full max-w-3xl mx-auto bg-[#fdf5e6] border-2 border-black rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-        {/* Window Title Bar */}
+        {/* Window Title Bar */}   
         <div className="bg-[#ff6b6b] border-b-2 border-black p-2 rounded-t-lg flex items-center justify-between">
           <p className="text-black font-bold text-lg">user_profile_in_parallel_universe.txt</p>
           <div className="flex space-x-2">
@@ -74,39 +74,39 @@ function CardPage() {
         </div>
       </div>
 
-      {/* Cat Animation */}
+     {/* cat cutie <3 */}
       <div className="absolute bottom-4 right-4 w-20 h-20 group">
         <div className="relative w-full h-full">
-          {/* Cat Body */}
+          {/* cat body */}
           <div className="absolute bottom-0 right-0 w-16 h-12 bg-[#ff6b6b] border-2 border-black rounded-full animate-bounce group-hover:animate-none group-hover:scale-110 transition-transform duration-300">
-            {/* Cat Ears */}
+            {/* cat ears */}
             <div className="absolute -top-3 -left-2 w-5 h-5 bg-[#ff6b6b] border-2 border-black rounded-tl-full transform -rotate-45 group-hover:rotate-0 transition-transform duration-300">
               <div className="absolute top-1 left-1 w-2 h-2 bg-[#ff8e8e] rounded-full"></div>
             </div>
             <div className="absolute -top-3 -right-2 w-5 h-5 bg-[#ff6b6b] border-2 border-black rounded-tr-full transform rotate-45 group-hover:rotate-0 transition-transform duration-300">
               <div className="absolute top-1 right-1 w-2 h-2 bg-[#ff8e8e] rounded-full"></div>
             </div>
-            {/* Cat Eyes */}
+            {/* cat eyes */}
             <div className="absolute top-3 left-3 w-3 h-3 bg-black rounded-full group-hover:scale-125 transition-transform duration-300">
               <div className="absolute top-0.5 left-0.5 w-1 h-1 bg-white rounded-full"></div>
             </div>
             <div className="absolute top-3 right-3 w-3 h-3 bg-black rounded-full group-hover:scale-125 transition-transform duration-300">
               <div className="absolute top-0.5 right-0.5 w-1 h-1 bg-white rounded-full"></div>
             </div>
-            {/* Cat Nose */}
+            {/* cat nose */}
             <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-1.5 h-1 bg-black rounded-full"></div>
-            {/* Cat Mouth */}
+            {/* cat mouth */}
             <div className="absolute top-5 left-1/2 transform -translate-x-1/2 w-2 h-1 border-b-2 border-black rounded-b-full group-hover:w-3 group-hover:h-2 transition-all duration-300"></div>
-            {/* Cat Whiskers */}
+            {/* cat whiskers */}
             <div className="absolute top-4 -left-4 w-4 h-0.5 bg-black transform rotate-12 group-hover:rotate-45 transition-transform duration-300"></div>
             <div className="absolute top-4 -left-4 w-4 h-0.5 bg-black transform -rotate-12 group-hover:-rotate-45 transition-transform duration-300"></div>
             <div className="absolute top-4 -right-4 w-4 h-0.5 bg-black transform -rotate-12 group-hover:-rotate-45 transition-transform duration-300"></div>
             <div className="absolute top-4 -right-4 w-4 h-0.5 bg-black transform rotate-12 group-hover:rotate-45 transition-transform duration-300"></div>
-            {/* Cat Tail */}
+            {/* cat tail */}
             <div className="absolute -right-6 top-1/2 w-8 h-3 bg-[#ff6b6b] border-2 border-black rounded-full transform rotate-45 animate-pulse group-hover:rotate-90 group-hover:animate-none transition-all duration-300">
               <div className="absolute -right-1 top-1/2 w-2 h-2 bg-[#ff8e8e] rounded-full"></div>
             </div>
-            {/* Cat Paws */}
+            {/* cat paws */}
             <div className="absolute -bottom-1 left-2 w-3 h-2 bg-[#ff8e8e] border-2 border-black rounded-full group-hover:scale-110 transition-transform duration-300"></div>
             <div className="absolute -bottom-1 right-2 w-3 h-2 bg-[#ff8e8e] border-2 border-black rounded-full group-hover:scale-110 transition-transform duration-300"></div>
           </div>
