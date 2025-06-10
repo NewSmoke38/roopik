@@ -53,7 +53,7 @@ function HomePage() {
     <div className="min-h-screen w-full p-4 sm:p-8 flex items-center justify-center">
       <div className="w-full max-w-lg mx-auto bg-[#fdf5e6] border-2 border-black rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
         <div className="bg-[#ff6b6b] border-b-2 border-black p-2 rounded-t-lg flex items-center justify-between">
-          <p className="text-black font-bold text-lg">Roopik_Card_Generator.exe</p>
+          <p className="text-black font-bold text-lg">user_on_earth.exe</p>
           <div className="flex space-x-2">
             <div className="w-4 h-4 bg-black border-2 border-black rounded-full"></div>
             <div className="w-4 h-4 bg-black border-2 border-black rounded-full"></div>
@@ -62,7 +62,16 @@ function HomePage() {
         </div>
         
         <div className="p-6 sm:p-8">
-          <h1 className="text-4xl font-bold mb-6 text-center text-black">roopik</h1>
+          <h1 className="text-4xl font-bold mb-2 text-center text-black">roopik</h1>
+          <p className="text-gray-500 text-sm text-center italic mb-6">
+            Different <span className="relative group">
+              <span className="cursor-help border-b border-dotted border-[#e64545]">roops</span>
+              <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-black text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+                roop means form/appearance in Sanskrit
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 rotate-45 w-2 h-2 bg-black"></span>
+              </span>
+            </span> of people in the Parallel Universe
+          </p>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
             <input
