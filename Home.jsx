@@ -57,10 +57,10 @@ export default function Home() {
       roles: roleInput.split(",").map((r) => r.trim()),
     };
 
-    // d
+    // this is where we fetch from our backend 
+    // hardcoded values like localhost wont work for vercel, so we overwrite it with the backend api url 
     try {
-      const res = await fetch("http://localhost:3000/api/v1/generate", {
-        method: "POST",
+const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/generate`, {        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
