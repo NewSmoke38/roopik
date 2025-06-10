@@ -15,7 +15,7 @@ function CardPage() {
 
   return (
     <div className="min-h-screen w-full p-4 sm:p-8 flex items-center justify-center relative">
-      <div className="w-full max-w-3xl mx-auto bg-[#fdf5e6] border-2 border-black rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+      <div className="w-full max-w-3xl mx-auto bg-[#fdf5e6] border-2 border-black rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)] relative z-10">
         {/* Window Title Bar */}   
         <div className="bg-[#ff6b6b] border-b-2 border-black p-2 rounded-t-lg flex items-center justify-between">
           <p className="text-black font-bold text-lg">user_profile_in_parallel_universe.txt</p>
