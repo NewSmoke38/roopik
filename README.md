@@ -17,8 +17,6 @@ When you load the app, it hands you your own alternate-universe badge, a simple,
 | Deploy    | Vercel |
 
 
- AI — Took assistance from ChatGPT for crafting summaries, debugging tricky parts, refining boilerplate, and polishing the codebase.
-
   ---
 
 ## 🧭 How It Works
